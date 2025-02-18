@@ -23,6 +23,16 @@ Basic_intro_algorithm
 레포지토리를 여러개로 나눠야 함. 안전하게 4개 쯤?
 
 
+## lecture1
+델파이
+입문강좌, 초급강좌, 게임, OOP
+
+## lecture2
+델파이
+Database 실무1~6, DB-design
+ 
+
+
 # 알려진 이슈
 
 캠타시아로 만들어진 플레이어의 트랙바가 제대로 동작하지 않음.
