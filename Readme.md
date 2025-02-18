@@ -24,10 +24,14 @@ Basic_intro_algorithm
 
 
 ## lecture1
+
 델파이
 입문강좌, 초급강좌, 게임, OOP
+Database
 
 ## lecture2
+982GB
+
 델파이
 Database 실무1~6, DB-design
  

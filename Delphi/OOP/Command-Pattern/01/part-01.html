@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command Pattern	Part-01</title>
+
+    <script src="/delmadang_lecture/ruffle/ruffle.js"></script>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+    
+        window.addEventListener("DOMContentLoaded", () => {
+            let ruffle = window.RufflePlayer.newest();
+            let player = ruffle.createPlayer();
+            let container = document.getElementById("container");
+            container.appendChild(player);
+            //player.ruffle().load("Part-01.swf");
+            player.ruffle().load("Part-01_controller.swf?csConfigFile=Part-01_config.xml");
+
+            player.style.width = "1025px"; 
+            player.style.height = "783px";
+        });
+    </script>    
+</head>
+<body>
+    <div id="container" style="width:1025px;height:783px;">
+        
+    </div>
+</body>
+</html>
