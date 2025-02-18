@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>컴포넌트 만들기 Part-01</title>
+
+    <script src="../../../../ruffle/ruffle.js"></script>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+    
+        window.addEventListener("DOMContentLoaded", () => {
+            let ruffle = window.RufflePlayer.newest();
+            let player = ruffle.createPlayer();
+            let container = document.getElementById("container");
+            container.appendChild(player);
+            //player.ruffle().load("Part-01.swf");
+            player.ruffle().load("Part-01_controller.swf?csConfigFile=Part-01_config.xml");
+
+            player.style.width = "1024px"; 
+            player.style.height = "782px";
+        });
+    </script>    
+</head>
+<body>
+    <div id="container" style="width:1024px;height:782px;">
+        
+    </div>
+</body>
+</html>
