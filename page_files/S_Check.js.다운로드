@@ -1,0 +1,167 @@
+
+//式式式式式式式式式式式式式式式式式式式式式
+// и旋虜 ъ辨. (蟾擠んл)
+//式式式式式式式式式式式式式式式式式式式式式
+function STR_Han(oStr){
+	var offSet, Reg_ExStr;
+	offSet = true;
+	
+	Reg_ExStr = /[^(丑-冗陛-鼇)]/; // 薑敘ル⑷衝
+	
+	if(oStr.match(Reg_ExStr)){
+		offSet = false;
+	}
+	return offSet;
+}
+//式式式式式式式式式式式式式式式式式式式式式
+// и旋虜 ъ辨. (蟾擠碳陛-螞瞪и欽橫虜)
+//式式式式式式式式式式式式式式式式式式式式式
+function STR_Han2(oStr){
+	var offSet, Reg_ExStr;
+	offSet = true;
+	
+	Reg_ExStr = /[^(陛-鼇)]/; // 薑敘ル⑷衝
+	
+	if(oStr.match(Reg_ExStr)){
+		offSet = false;
+	}
+	return offSet;
+}
+
+//式式式式式式式式式式式式式式式式式式式式式
+// 艙僥濠(_,-薯諼) 虜 ъ辨.
+//式式式式式式式式式式式式式式式式式式式式式
+function STR_Eng(oStr){
+	var offSet, Reg_ExStr;
+	offSet = true;
+	
+	Reg_ExStr = /[^A-Za-z]/; // 薑敘ル⑷衝
+	
+	if(oStr.match(Reg_ExStr)){
+		offSet = false;
+	}
+	return offSet;
+}	
+
+//式式式式式式式式式式式式式式式式式式式式式
+// 璋濠虜 ъ辨
+//式式式式式式式式式式式式式式式式式式式式式
+function STR_Num(oStr){
+	if (oStr.length > 0){ 
+		for (i=0; i<oStr.length; i++){
+			if (oStr.charAt(i) < '0' || oStr.charAt(i) > '9'){
+				return false;
+			}
+		}
+		return true;
+	}else{
+		return false;
+	}
+}
+//式式式式式式式式式式式式式式式式式式式式式
+// 璋濠, 艙僥濠(_,-薯諼) 虜 ъ辨.
+//式式式式式式式式式式式式式式式式式式式式式
+function STR_Num_Eng(oStr){
+	var offSet, Reg_ExStr;
+	offSet = true;
+	
+	Reg_ExStr = /[^A-Za-z0-9]/; // 薑敘ル⑷衝
+	
+	if(oStr.match(Reg_ExStr)){
+		offSet = false;
+	}
+	return offSet;
+}	
+//式式式式式式式式式式式式式式式式式式式式式
+// и旋, 艙僥濠(_,薯諼) 虜 ъ辨.
+//式式式式式式式式式式式式式式式式式式式式式
+function STR_Han_Eng(oStr){
+	var offSet, Reg_ExStr;
+	offSet = true;
+	
+	Reg_ExStr = /[^A-Za-z陛-鼇\s]/; // 薑敘ル⑷衝
+	
+	if(oStr.match(Reg_ExStr)){
+		offSet = false;
+	}
+	return offSet;
+}	
+
+//式式式式式式式式式式式式式式式式式式式式式
+// 璋濠, 艙僥濠, и旋(_,奢寥薯諼) 虜 ъ辨. --[餌辨醞]
+//式式式式式式式式式式式式式式式式式式式式式
+function STR_Word(oStr){
+	var offSet, Reg_ExStr;
+	offSet = true;
+	
+	Reg_ExStr = /[^A-Za-z0-9丑-冗陛-鼇\s]/g;  // 薑敘ル⑷衝
+	
+	if(oStr.match(Reg_ExStr)){
+		offSet = false;
+	}
+	return offSet;
+}
+
+//式式式式式式式式式式式式式式式式式式式式式
+// 璋濠, 艙僥濠, и旋(_,奢寥婁","-薯諼) 虜 ъ辨. --[餌辨醞]
+//式式式式式式式式式式式式式式式式式式式式式
+function STR_Word2(oStr){
+	var offSet, Reg_ExStr;
+	offSet = true;
+	
+	Reg_ExStr = /[^A-Za-z0-9丑-冗陛-鼇\s,]/g;  // 薑敘ル⑷衝
+	
+	if(oStr.match(Reg_ExStr)){
+		offSet = false;
+	}
+	return offSet;
+}	
+
+//式式式式式式式式式式式式式式式式式式式式式
+// 璋濠, 艙僥濠, и旋虜 ъ辨.
+//式式式式式式式式式式式式式式式式式式式式式
+function STR_Word3(oStr){
+	var offSet, Reg_ExStr;
+	offSet = true;
+	
+	Reg_ExStr = /[^A-Za-z0-9陛-鼇]/g;  // 薑敘ル⑷衝
+	
+	if(oStr.match(Reg_ExStr)){
+		offSet = false;
+	}
+	return offSet;
+}	
+
+//式式式式式式式式式式式式式式式式式式式式式
+//謝難 奢寥薯剪
+//式式式式式式式式式式式式式式式式式式式式式
+function L_Trim(oStr){
+	while (1) {
+		if (oStr.substring(0,1) != " "){
+			break;
+		}
+		oStr = oStr.substring(1, oStr.length);
+	}
+	return oStr;
+}
+
+//式式式式式式式式式式式式式式式式式式式式式
+//辦難 奢寥薯剪
+//式式式式式式式式式式式式式式式式式式式式式
+function R_Trim(oStr){
+	while (1) {
+		if (oStr.substring(oStr.length - 1,oStr.length) != " "){
+			break;
+		}
+		oStr = oStr.substring(0, oStr.length - 1);
+	}
+	return oStr;
+}
+
+//式式式式式式式式式式式式式式式式式式式式式
+//曄薹 奢寥薯剪
+//式式式式式式式式式式式式式式式式式式式式式
+function B_Trim(oStr){
+	var Str;
+	return SpaceRemoval_R(SpaceRemoval_L(oStr));
+}
