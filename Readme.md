@@ -22,20 +22,22 @@ Basic_intro_algorithm
 용량이 생각보다 크다. 3GB에 육박. 
 레포지토리를 여러개로 나눠야 함. 안전하게 4개 쯤?
 
+DB-design 강좌는 AVI. 
 
 ## lecture1
 
 델파이
 입문강좌, 초급강좌, 게임, OOP
-Database
+Misc
 
 ## lecture2
-982GB
 
 델파이
-Database 실무1~6, DB-design
- 
+Database 실무1~6, 
+DB-design - 1, 2는 AVI파일. mp4로 변환해 둠. 
 
+
+ 
 
 # 알려진 이슈
 
