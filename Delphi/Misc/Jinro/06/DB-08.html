@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>진로그룹 강좌내용 Part-06</title>
+
+    <script src="/delmadang_lecture/ruffle/ruffle.js"></script>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+    
+        window.addEventListener("DOMContentLoaded", () => {
+            let ruffle = window.RufflePlayer.newest();
+            let player = ruffle.createPlayer();
+            let container = document.getElementById("container");
+            container.appendChild(player);
+
+            player.style.width = "1025px"; 
+            player.style.height = "788px";
+
+            //player.ruffle().load("DB-03.swf");
+            player.ruffle().load("DB-08_controller.swf?csConfigFile=DB-08_config.xml");
+        }); 
+    </script>    
+</head>
+<body>
+    <div id="container">
+        
+    </div>
+</body>
+</html>
