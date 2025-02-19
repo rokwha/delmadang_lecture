@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채팅 만들기 Part-03</title>
+
+    <script src="/delmadang_lecture/ruffle/ruffle.js"></script>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+    
+        window.addEventListener("DOMContentLoaded", () => {
+            let ruffle = window.RufflePlayer.newest();
+            let player = ruffle.createPlayer();
+            let container = document.getElementById("container");
+            container.appendChild(player);
+
+            // 이 시리즈는 직접 부르자. 컨트롤러 동작안함.
+            player.ruffle().load("Part-03.swf");
+            //player.ruffle().load("Part-01_controller.swf?csConfigFile=Part-01_config.xml");
+
+            player.style.width = "1030px"; 
+            player.style.height = "785px";
+        });
+    </script>    
+</head>
+<body>
+    <div id="container">
+        
+    </div>
+</body>
+</html>

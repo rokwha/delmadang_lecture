@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>	음성통신 Part-02</title>
+
+    <script src="/delmadang_lecture/ruffle/ruffle.js"></script>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+    
+        window.addEventListener("DOMContentLoaded", () => {
+            let ruffle = window.RufflePlayer.newest();
+            let player = ruffle.createPlayer();
+            let container = document.getElementById("container");
+            container.appendChild(player);
+
+            // 이 시리즈는 컨트롤러 동작안함. 직접부르자.
+            player.ruffle().load("VoiceZip_02.swf");
+            //player.ruffle().load("VoiceZip_01_controller.swf?csConfigFile=VoiceZip_01_config.xml");
+
+            player.style.width = "1030px"; 
+            player.style.height = "785px";
+        });
+    </script>    
+</head>
+<body>
+    <div id="container">
+        
+    </div>
+</body>
+</html>
