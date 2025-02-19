@@ -1,8 +1,6 @@
 # 2025.02.18
 
 
-
-
 ruffle 을 사용해 기존 델마당의 SWF 재생 메뉴를 복원한다. 
 
 https://ruffle.rs/
@@ -53,4 +51,12 @@ Internet
 다른 컨트롤러로 변경하는것도 고민할 것. 
 
 
+
+# 2025.02.19
+
+뒤져보니 한 5GB까지는 레포 하나에 쓸 수 있나본데??
+
+https://stackoverflow.com/questions/38768454/repository-size-limits-for-github-com
+
+그냥 하나로 퉁치자. 안되면 그 때 고민하자. 귀찮다. 
 
